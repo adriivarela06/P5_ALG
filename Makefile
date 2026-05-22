@@ -1,5 +1,3 @@
-# Makefile para la practica de Programacion Dinamica
-#
 # Targets principales:
 #   make              -> compila aventura y generador
 #   make aventura     -> compila solo el solver
@@ -12,56 +10,61 @@
 #   make aleatorio    -> genera un mapa aleatorio de 6 nodos y lo resuelve
 #   make ejemplos     -> ejecuta los 3 ejemplos generando SVG con ruta destacada
 #
-#   make clean        -> elimina archivos generados
+#   make clean        -> elimina archivos generados y objetos
 
 CXX      = g++
-CXXFLAGS = -std=c++17 -Wall -Wextra -O2
+CXXFLAGS = -std=c++17 -Wall -Wextra -O2 -Iinclude
 
-# Solver
-AVENTURA      = aventura
-SRCS_AVENTURA = main.cpp camino_heroe.cpp visualizacion.cpp
-OBJS_AVENTURA = $(SRCS_AVENTURA:.cpp=.o)
-HEADERS       = camino_heroe.h visualizacion.h
+SRC_DIR  = src
+BIN_DIR  = bin
+DATA_IN  = data/Entradas
+DATA_TXT = data/Salidas_Texto
+DATA_SVG = data/Salidas_Dibujo
 
-# Generador
-GENERADOR     = generador
-SRCS_GEN      = generador.cpp
+AVENTURA      = $(BIN_DIR)/aventura
+SRCS_AVENTURA = $(SRC_DIR)/main.cpp $(SRC_DIR)/camino_heroe.cpp $(SRC_DIR)/visualizacion.cpp
+
+GENERADOR     = $(BIN_DIR)/generador
+SRCS_GEN      = $(SRC_DIR)/generador.cpp
 
 all: $(AVENTURA) $(GENERADOR)
 
-$(AVENTURA): $(OBJS_AVENTURA)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+$(AVENTURA): $(SRCS_AVENTURA)
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(SRCS_AVENTURA) -o $@
 
 $(GENERADOR): $(SRCS_GEN)
-	$(CXX) $(CXXFLAGS) -o $@ $^
-
-%.o: %.cpp $(HEADERS)
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(SRCS_GEN) -o $@
 
 run: $(AVENTURA)
-	./$(AVENTURA) ejemplo1.txt
+	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt
 
 svg: $(AVENTURA)
-	./$(AVENTURA) ejemplo1.txt salida1.txt mapa1.svg
-	@echo "Mapa generado: mapa1.svg (abrir con un navegador)"
+	@mkdir -p $(DATA_TXT) $(DATA_SVG)
+	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt $(DATA_TXT)/salida1.txt $(DATA_SVG)/mapa1.svg
+	@echo "Mapa generado: $(DATA_SVG)/mapa1.svg (abrir con un navegador)"
 
 ruta: $(AVENTURA)
-	./$(AVENTURA) ejemplo1.txt salida1.txt mapa1.svg 1 3
-	@echo "Mapa con ruta destacada generado: mapa1.svg"
+	@mkdir -p $(DATA_TXT) $(DATA_SVG)
+	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt $(DATA_TXT)/salida1.txt $(DATA_SVG)/mapa1.svg 1 3
+	@echo "Mapa con ruta destacada generado: $(DATA_SVG)/mapa1.svg"
 
 ejemplos: $(AVENTURA)
-	./$(AVENTURA) ejemplo1.txt ejemplo1_salida.txt ejemplo1_mapa.svg 1 3
-	./$(AVENTURA) ejemplo2.txt ejemplo2_salida.txt ejemplo2_mapa.svg 1 5
-	./$(AVENTURA) ejemplo3.txt ejemplo3_salida.txt ejemplo3_mapa.svg 1 7
-	@echo "SVGs generados: ejemplo1_mapa.svg  ejemplo2_mapa.svg  ejemplo3_mapa.svg"
+	@mkdir -p $(DATA_TXT) $(DATA_SVG)
+	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt $(DATA_TXT)/ejemplo1_salida.txt $(DATA_SVG)/ejemplo1_mapa.svg 1 3
+	./$(AVENTURA) $(DATA_IN)/ejemplo2.txt $(DATA_TXT)/ejemplo2_salida.txt $(DATA_SVG)/ejemplo2_mapa.svg 1 5
+	./$(AVENTURA) $(DATA_IN)/ejemplo3.txt $(DATA_TXT)/ejemplo3_salida.txt $(DATA_SVG)/ejemplo3_mapa.svg 1 7
+	@echo "SVGs generados en la carpeta $(DATA_SVG)"
 
 aleatorio: $(AVENTURA) $(GENERADOR)
-	./$(GENERADOR) 6 aleatorio.txt 0.4
-	./$(AVENTURA) aleatorio.txt salida_aleatorio.txt mapa_aleatorio.svg
-	@echo "Mapa aleatorio generado: mapa_aleatorio.svg"
+	@mkdir -p $(DATA_IN) $(DATA_TXT) $(DATA_SVG)
+	./$(GENERADOR) 6 $(DATA_IN)/aleatorio.txt 0.4
+	./$(AVENTURA) $(DATA_IN)/aleatorio.txt $(DATA_TXT)/salida_aleatorio.txt $(DATA_SVG)/mapa_aleatorio.svg
+	@echo "Mapa aleatorio generado: $(DATA_SVG)/mapa_aleatorio.svg"
 
 clean:
-	rm -f $(OBJS_AVENTURA) $(AVENTURA) $(GENERADOR) \
-	      salida*.txt aleatorio.txt mapa*.svg
+	rm -f $(AVENTURA) $(GENERADOR)
+	rm -f $(DATA_TXT)/*.txt $(DATA_IN)/aleatorio.txt $(DATA_SVG)/*.svg
 
 .PHONY: all run svg ruta ejemplos aleatorio clean
