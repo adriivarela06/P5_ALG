@@ -36,6 +36,12 @@ void el_camino_del_heroe(const vector<vector<int>>& C,
     // -------------------------------------------------------------------------
     // >>> AQUI DEBE IR LA IMPLEMENTACION >>>
 
+    for(int i = 0; i < n; i++){
+        for(int j = 0; j < n; j++){
+            D[i][j] = C[i][j];
+        }
+    }
+
     
     // <<< FIN DEL BLOQUE <<<
 
@@ -48,6 +54,16 @@ void el_camino_del_heroe(const vector<vector<int>>& C,
     // -------------------------------------------------------------------------
     // >>> AQUI DEBE IR LA IMPLEMENTACION >>>
 
+    for(int k = 0; k < n; k++){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                if(D[i][k] + G[k] + D[k][j] < D[i][j]){
+                    D[i][j] = D[i][k] + G[k] + D[k][j];
+                    P[i][j] = k;
+                }
+            }
+        }
+    }
 
     // <<< FIN DEL BLOQUE <<<
 }
