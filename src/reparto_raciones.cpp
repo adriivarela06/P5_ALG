@@ -51,31 +51,25 @@ Solucion reparto(int i, int capacidad, const vector<pair<int, int>> &cajas, map<
     }
 
     int peso_caja = cajas[i].first;
-    int disponibles = cajas[i].second;
 
     Solucion mejor_solucion; // Empieza siendo -INF por defecto
 
-    for (int k = 0; k <= disponibles; ++k) {
-        if (capacidad - k * peso_caja >= 0) {
-            
+    for (int k = 0; capacidad - k * peso_caja >= 0; ++k) {
             Solucion sol_subproblema = reparto(i - 1, capacidad - k * peso_caja, cajas, m);
             
-            if (sol_subproblema.n_cajas != -INF) {
-                int candidata_cajas = k + sol_subproblema.n_cajas;
+        if (sol_subproblema.n_cajas != -INF) {
+            int candidata_cajas = k + sol_subproblema.n_cajas;
+            
+            // Si encontramos un camino que usa MÁS cajas que el mejor actual, actualizamos todo
+            if (candidata_cajas > mejor_solucion.n_cajas) {
+                mejor_solucion.n_cajas = candidata_cajas;
                 
-                // Si encontramos un camino que usa MÁS cajas que el mejor actual, actualizamos todo
-                if (candidata_cajas > mejor_solucion.n_cajas) {
-                    mejor_solucion.n_cajas = candidata_cajas;
-                    
-                    // Copiamos el desglose que venía de los tipos anteriores (i-1, i-2...)
-                    mejor_solucion.desglose_cajas = sol_subproblema.desglose_cajas;
-                    
-                    // Anotamos que en este tipo 'i', decidimos usar 'k' cajas
-                    mejor_solucion.desglose_cajas[i] = k;
-                }
+                // Copiamos el desglose que venía de los tipos anteriores (i-1, i-2...)
+                mejor_solucion.desglose_cajas = sol_subproblema.desglose_cajas;
+                
+                // Anotamos que en este tipo 'i', decidimos usar 'k' cajas
+                mejor_solucion.desglose_cajas[i] = k;                
             }
-        } else {
-            break; 
         }
     }
 
