@@ -24,13 +24,13 @@ DATA_TXT = data/Salidas_Texto
 DATA_SVG = data/Salidas_Dibujo
 
 AVENTURA      = $(BIN_DIR)/aventura
-SRCS_AVENTURA = $(SRC_DIR)/main.cpp $(SRC_DIR)/camino_heroe.cpp $(SRC_DIR)/visualizacion.cpp
+SRCS_AVENTURA = $(SRC_DIR)/main_heroe.cpp $(SRC_DIR)/camino_heroe.cpp $(SRC_DIR)/visualizacion.cpp
 
 GENERADOR     = $(BIN_DIR)/generador
 SRCS_GEN      = $(SRC_DIR)/generador.cpp
 
 TIEMPOS       = $(BIN_DIR)/tiempos
-SRCS_TIEMPOS  = $(SRC_DIR)/main_tiempos.cpp $(SRC_DIR)/camino_heroe.cpp
+SRCS_TIEMPOS  = $(SRC_DIR)/main_tiempos_heroe.cpp $(SRC_DIR)/camino_heroe.cpp
 
 all: $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO)
 
