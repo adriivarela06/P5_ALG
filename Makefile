@@ -32,9 +32,6 @@ SRCS_GEN      = $(SRC_DIR)/generador.cpp
 TIEMPOS       = $(BIN_DIR)/tiempos
 SRCS_TIEMPOS  = $(SRC_DIR)/main_tiempos.cpp $(SRC_DIR)/camino_heroe.cpp
 
-REPARTO       = $(BIN_DIR)/reparto
-SRCS_REPARTO  = $(SRC_DIR)/reparto_raciones.cpp
-
 all: $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO)
 
 $(AVENTURA): $(SRCS_AVENTURA)
@@ -48,10 +45,6 @@ $(GENERADOR): $(SRCS_GEN)
 $(TIEMPOS): $(SRCS_TIEMPOS)
 	@mkdir -p $(BIN_DIR)
 	$(CXX) $(CXXFLAGS) $(SRCS_TIEMPOS) -o $@
-
-$(REPARTO): $(SRCS_REPARTO)
-	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) $(SRCS_REPARTO) -o $@
 
 run: $(AVENTURA)
 	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt
