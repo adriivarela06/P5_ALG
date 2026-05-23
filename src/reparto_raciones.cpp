@@ -101,7 +101,7 @@ int main(int argc, char* argv[]) {
     }
 
     cout << "Cajas Disponibles en el Almacen \n";
-    for (int i = 0; i < cajas.size(); ++i) {
+    for (int i = 0; i < (int)cajas.size(); ++i) {
         cout << "Tipo " << i << " -> Peso: " << cajas[i].first << " kg | Cantidad: " << cajas[i].second << "\n";
     }
     cout << "---------------------------------------\n\n";

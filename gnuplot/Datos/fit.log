@@ -1,0 +1,28 @@
+
+
+*******************************************************************************
+Sat May 23 15:44:34 2026
+
+
+FIT:    data read from 'gnuplot/Datos/resultados_grafica.txt' using 1:2
+        format = x:z
+        #datapoints = 8
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a * x**3
+fitted parameters initialized with current variable values
+
+   5 3.8254427876e+02  -2.97e-11  2.03e+05    4.083428e-07
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 382.544
+rel. change during last iteration : -2.97186e-16
+
+degrees of freedom    (FIT_NDF)                        : 7
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.39251
+variance of residuals (reduced chisquare) = WSSR/ndf   : 54.6492
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 4.08343e-07      +/- 1.288e-08    (3.155%)
