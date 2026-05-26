@@ -209,66 +209,134 @@
   <text x='500' y='55' text-anchor='middle' font-size='32' font-weight='bold' fill='#3e2723' style='letter-spacing: 2px'>~ Mapa de la Aventura ~</text>
   <text x='500' y='80' text-anchor='middle' font-size='13' fill='#5d4037' font-style='italic'></text>
   <g id='caminos'>
-    <path d='M 477.373,187.627 Q 406.87,311.87 282.627,382.373' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <path d='M 527.713,136 Q 642.409,158.341 719.104,246.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
     <g>
-      <rect x='389.84' y='297.84' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
-      <text x='402.84' y='311.84' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>12</text>
+      <rect x='626.559' y='153.277' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='639.559' y='167.277' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>2</text>
     </g>
-    <path d='M 500,613 Q 462,405 500,197' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <path d='M 516,147.713 Q 656.318,314.75 730.817,519.787' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
     <g>
-      <rect x='454.7' y='395' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
-      <text x='467.7' y='409' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>8</text>
+      <rect x='638.381' y='307.6' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='651.381' y='321.6' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>15</text>
     </g>
-    <path d='M 477.373,622.373 Q 353.13,551.87 282.627,427.627' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <path d='M 472.287,136 Q 395.591,224.159 280.896,246.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
     <g>
-      <rect x='344.16' y='537.84' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
-      <text x='357.16' y='551.84' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>2</text>
+      <rect x='379.741' y='209.223' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='392.741' y='223.223' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>7</text>
     </g>
-    <path d='M 292,405 Q 500,367 708,405' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <path d='M 719.104,246.5 Q 604.409,224.159 527.713,136' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
     <g>
-      <rect x='487' y='362.7' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
-      <text x='500' y='376.7' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>6</text>
+      <rect x='594.259' y='209.223' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='607.259' y='223.223' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>8</text>
+    </g>
+    <path d='M 746.817,294.5 Q 784.817,405 746.817,515.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='766.117' y='395' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='779.117' y='409' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>4</text>
+    </g>
+    <path d='M 719.104,563.5 Q 642.409,651.659 527.713,674' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='626.559' y='636.723' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='639.559' y='650.723' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>12</text>
+    </g>
+    <path d='M 719.104,531.5 Q 481,437.909 280.896,278.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='470.85' y='422.973' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='483.85' y='436.973' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>7</text>
+    </g>
+    <path d='M 516,662.287 Q 590.5,457.25 730.817,290.213' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='582.436' y='450.1' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='595.436' y='464.1' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>12</text>
+    </g>
+    <path d='M 527.713,674 Q 604.409,585.841 719.104,563.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='594.259' y='580.777' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='607.259' y='594.777' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>15</text>
+    </g>
+    <path d='M 472.287,674 Q 357.591,651.659 280.896,563.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='347.441' y='636.723' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='360.441' y='650.723' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>5</text>
+    </g>
+    <path d='M 484,662.287 Q 343.682,495.25 269.183,290.213' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='335.619' y='482.4' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='348.619' y='496.4' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>3</text>
+    </g>
+    <path d='M 285.183,547.5 Q 500,509.5 714.817,547.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='487' y='505.2' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='500' y='519.2' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>8</text>
+    </g>
+    <path d='M 253.183,515.5 Q 215.183,405 253.183,294.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='207.883' y='395' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='220.883' y='409' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>7</text>
+    </g>
+    <path d='M 280.896,246.5 Q 357.591,158.341 472.287,136' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='347.441' y='153.277' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='360.441' y='167.277' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>15</text>
+    </g>
+    <path d='M 280.896,278.5 Q 519,372.091 719.104,531.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='503.15' y='367.027' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='516.15' y='381.027' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>2</text>
+    </g>
+    <path d='M 269.183,290.213 Q 409.5,457.25 484,662.287' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='391.564' y='450.1' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='404.564' y='464.1' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>8</text>
+    </g>
+    <path d='M 253.183,294.5 Q 291.183,405 253.183,515.5' fill='none' stroke='#5d4037' stroke-width='2.2' stroke-linecap='round' marker-end='url(#flecha)' opacity='0.85'/>
+    <g>
+      <rect x='272.483' y='395' width='26' height='18' rx='5' fill='#fff8e1' stroke='#5d4037' stroke-width='1'/>
+      <text x='285.483' y='409' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>15</text>
     </g>
   </g>
   <g id='caminos-ruta'>
-    <path d='M 522.627,187.627 Q 646.87,258.13 717.373,382.373' fill='none' stroke='#e65100' stroke-width='4.5' stroke-linecap='round' marker-end='url(#flecha-ruta)' opacity='1'/>
+    <path d='M 714.817,262.5 Q 500,300.5 285.183,262.5' fill='none' stroke='#e65100' stroke-width='4.5' stroke-linecap='round' marker-end='url(#flecha-ruta)' opacity='1'/>
     <g>
-      <rect x='629.84' y='252.16' width='26' height='18' rx='5' fill='#ffe082' stroke='#e65100' stroke-width='1.8'/>
-      <text x='642.84' y='266.16' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>5</text>
-    </g>
-    <path d='M 717.373,427.627 Q 646.87,551.87 522.627,622.373' fill='none' stroke='#e65100' stroke-width='4.5' stroke-linecap='round' marker-end='url(#flecha-ruta)' opacity='1'/>
-    <g>
-      <rect x='629.84' y='537.84' width='26' height='18' rx='5' fill='#ffe082' stroke='#e65100' stroke-width='1.8'/>
-      <text x='642.84' y='551.84' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>4</text>
+      <rect x='487' y='284.8' width='26' height='18' rx='5' fill='#ffe082' stroke='#e65100' stroke-width='1.8'/>
+      <text x='500' y='298.8' text-anchor='middle' font-family='Georgia, serif' font-size='12' font-weight='bold' fill='#3e2723'>6</text>
     </g>
   </g>
   <g id='localizaciones'>
-    <circle cx='500' cy='165' r='38' fill='#ffe082' opacity='0.55'/>
-    <circle cx='500' cy='165' r='38' fill='none' stroke='#ff8f00' stroke-width='3' stroke-dasharray='5,3' opacity='0.85'/>
-    <use href='#ic-castillo' x='470' y='135' width='60' height='60'/>
-    <circle cx='524' cy='141' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
-    <text x='524' y='146' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>1</text>
-    <use href='#ic-slime' x='458' y='177' width='30' height='30'/>
-    <text x='500' y='213' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 2</text>
-    <circle cx='740' cy='405' r='38' fill='#ffe082' opacity='0.55'/>
-    <circle cx='740' cy='405' r='38' fill='none' stroke='#ff8f00' stroke-width='3' stroke-dasharray='5,3' opacity='0.85'/>
-    <use href='#ic-taberna' x='710' y='375' width='60' height='60'/>
-    <circle cx='764' cy='381' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
-    <text x='764' y='386' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>2</text>
-    <use href='#ic-slime' x='698' y='417' width='30' height='30'/>
-    <text x='740' y='453' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 2</text>
-    <circle cx='500' cy='645' r='38' fill='#ffe082' opacity='0.55'/>
-    <circle cx='500' cy='645' r='38' fill='none' stroke='#ff8f00' stroke-width='3' stroke-dasharray='5,3' opacity='0.85'/>
-    <use href='#ic-bosque' x='470' y='615' width='60' height='60'/>
-    <circle cx='524' cy='621' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
-    <text x='524' y='626' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>3</text>
-    <use href='#ic-slime' x='458' y='657' width='30' height='30'/>
-    <text x='500' y='693' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 2</text>
-    <use href='#ic-cripta' x='230' y='375' width='60' height='60'/>
-    <circle cx='284' cy='381' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
-    <text x='284' y='386' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>4</text>
-    <use href='#ic-slime' x='218' y='417' width='30' height='30'/>
-    <text x='260' y='453' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 2</text>
+    <use href='#ic-castillo' x='470' y='90' width='60' height='60'/>
+    <circle cx='524' cy='96' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='524' y='101' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>1</text>
+    <use href='#ic-goblin' x='458' y='132' width='30' height='30'/>
+    <text x='500' y='168' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 4</text>
+    <circle cx='746.817' cy='262.5' r='38' fill='#ffe082' opacity='0.55'/>
+    <circle cx='746.817' cy='262.5' r='38' fill='none' stroke='#ff8f00' stroke-width='3' stroke-dasharray='5,3' opacity='0.85'/>
+    <use href='#ic-taberna' x='716.817' y='232.5' width='60' height='60'/>
+    <circle cx='770.817' cy='238.5' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='770.817' y='243.5' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>2</text>
+    <use href='#ic-goblin' x='704.817' y='274.5' width='30' height='30'/>
+    <text x='746.817' y='310.5' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 3</text>
+    <use href='#ic-bosque' x='716.817' y='517.5' width='60' height='60'/>
+    <circle cx='770.817' cy='523.5' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='770.817' y='528.5' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>3</text>
+    <use href='#ic-goblin' x='704.817' y='559.5' width='30' height='30'/>
+    <text x='746.817' y='595.5' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 3</text>
+    <use href='#ic-cripta' x='470' y='660' width='60' height='60'/>
+    <circle cx='524' cy='666' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='524' y='671' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>4</text>
+    <use href='#ic-goblin' x='458' y='702' width='30' height='30'/>
+    <text x='500' y='738' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 3</text>
+    <use href='#ic-mazmorra' x='223.183' y='517.5' width='60' height='60'/>
+    <circle cx='277.183' cy='523.5' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='277.183' y='528.5' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>5</text>
+    <use href='#ic-dragon' x='211.183' y='559.5' width='30' height='30'/>
+    <text x='253.183' y='595.5' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 7</text>
+    <circle cx='253.183' cy='262.5' r='38' fill='#ffe082' opacity='0.55'/>
+    <circle cx='253.183' cy='262.5' r='38' fill='none' stroke='#ff8f00' stroke-width='3' stroke-dasharray='5,3' opacity='0.85'/>
+    <use href='#ic-templo' x='223.183' y='232.5' width='60' height='60'/>
+    <circle cx='277.183' cy='238.5' r='13' fill='#3e2723' stroke='#fff8e1' stroke-width='2.5'/>
+    <text x='277.183' y='243.5' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#fff8e1'>6</text>
+    <use href='#ic-goblin' x='211.183' y='274.5' width='30' height='30'/>
+    <text x='253.183' y='310.5' text-anchor='middle' font-family='Georgia, serif' font-size='11' fill='#3e2723' font-style='italic'>G = 4</text>
   </g>
   <g id='leyenda'>
     <rect x='20' y='600' width='220' height='130' rx='8' fill='#fff8e1' stroke='#5d4037' stroke-width='1.5' opacity='0.95'/>
@@ -282,8 +350,8 @@
   </g>
   <g id='panel-ruta'>
     <rect x='760' y='105' width='220' height='95' rx='8' fill='#fff8e1' stroke='#e65100' stroke-width='2' opacity='0.97'/>
-    <text x='870' y='127' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#bf360c'>Ruta 1 &#8594; 3</text>
-    <text x='870' y='153' text-anchor='middle' font-family='Georgia, serif' font-size='13' fill='#3e2723'>1 > 2 > 3</text>
-    <text x='870' y='181' text-anchor='middle' font-family='Georgia, serif' font-size='13' font-style='italic' fill='#3e2723'>Coste total: 11</text>
+    <text x='870' y='127' text-anchor='middle' font-family='Georgia, serif' font-size='14' font-weight='bold' fill='#bf360c'>Ruta 2 &#8594; 6</text>
+    <text x='870' y='153' text-anchor='middle' font-family='Georgia, serif' font-size='13' fill='#3e2723'>2 > 6</text>
+    <text x='870' y='181' text-anchor='middle' font-family='Georgia, serif' font-size='13' font-style='italic' fill='#3e2723'>Coste total: 6</text>
   </g>
 </svg>
