@@ -24,24 +24,18 @@ struct Estado {
 
 struct Solucion {
     int n_cajas; 
-    vector<int> desglose_cajas; // desglose_cajas[i] = cuántas cajas del tipo i usamos
+    vector<int> desglose_cajas; 
 
-    // Por defecto, el estado es imposible (-INF)
     Solucion() : n_cajas(-INF) {} 
-    
-    // Constructor para soluciones válidas
     Solucion(int num_cajas, vector<int> desglose) : n_cajas(num_cajas), desglose_cajas(desglose) {}
 };
 
-// Pasamos 'cajas' por referencia constante (&) para no copiar el vector en cada llamada recursiva (Eficiencia)
 Solucion reparto(int i, int capacidad, const vector<pair<int, int>> &cajas, map<Estado, Solucion> &m) {
 
-    // CASO BASE 1: Éxito. Devolvemos un vector vacío de tamaño N (inicializado a 0 cajas usadas)
     if (capacidad == 0) {
         return Solucion(0, vector<int>(cajas.size(), 0));
     }
 
-    // CASO BASE 2: Fracaso.
     if (capacidad < 0 || i < 0) return Solucion(-INF, vector<int>());
     
     Estado estado_actual(i, capacidad);
@@ -51,23 +45,19 @@ Solucion reparto(int i, int capacidad, const vector<pair<int, int>> &cajas, map<
     }
 
     int peso_caja = cajas[i].first;
+    int disponibles = cajas[i].second;
 
-    Solucion mejor_solucion; // Empieza siendo -INF por defecto
+    Solucion mejor_solucion;
 
-    for (int k = 0; capacidad - k * peso_caja >= 0; ++k) {
+    for (int k = 0; k <= disponibles && capacidad - k * peso_caja >= 0; ++k) {
             Solucion sol_subproblema = reparto(i - 1, capacidad - k * peso_caja, cajas, m);
             
         if (sol_subproblema.n_cajas != -INF) {
             int candidata_cajas = k + sol_subproblema.n_cajas;
-            
-            // Si encontramos un camino que usa MÁS cajas que el mejor actual, actualizamos todo
+
             if (candidata_cajas > mejor_solucion.n_cajas) {
                 mejor_solucion.n_cajas = candidata_cajas;
-                
-                // Copiamos el desglose que venía de los tipos anteriores (i-1, i-2...)
                 mejor_solucion.desglose_cajas = sol_subproblema.desglose_cajas;
-                
-                // Anotamos que en este tipo 'i', decidimos usar 'k' cajas
                 mejor_solucion.desglose_cajas[i] = k;                
             }
         }
@@ -89,13 +79,12 @@ int main(int argc, char* argv[]) {
 
     srand(time(NULL));
 
-    // Forzamos que num_tipos sea entre 2 y 5 para asegurar variedad
     int num_tipos = (rand() % 4) + 2; 
     vector<pair<int, int>> cajas;
 
 
     for (int i = 1; i < num_tipos; ++i) {
-        int peso = (rand() % 9) + 2; // Pesos entre 2 y 10 kg
+        int peso = (rand() % 9) + 2; 
         int cantidad = (rand() % 5) + 1;
         cajas.push_back({peso, cantidad});
     }
