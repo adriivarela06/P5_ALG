@@ -32,7 +32,10 @@ SRCS_GEN      = $(SRC_DIR)/generador.cpp
 TIEMPOS       = $(BIN_DIR)/tiempos
 SRCS_TIEMPOS  = $(SRC_DIR)/main_tiempos_heroe.cpp $(SRC_DIR)/camino_heroe.cpp
 
-all: $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO)
+REPARTO       = $(BIN_DIR)/reparto
+SRCS_REPARTO  = $(SRC_DIR)/reparto_raciones.cpp
+
+all: $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO) 
 
 $(AVENTURA): $(SRCS_AVENTURA)
 	@mkdir -p $(BIN_DIR)
@@ -45,6 +48,12 @@ $(GENERADOR): $(SRCS_GEN)
 $(TIEMPOS): $(SRCS_TIEMPOS)
 	@mkdir -p $(BIN_DIR)
 	$(CXX) $(CXXFLAGS) $(SRCS_TIEMPOS) -o $@
+
+$(REPARTO): $(SRCS_REPARTO)
+	@mkdir -p $(BIN_DIR)
+	$(CXX) $(CXXFLAGS) $(SRCS_REPARTO) -o $@
+
+reparto: $(REPARTO)
 
 run: $(AVENTURA)
 	./$(AVENTURA) $(DATA_IN)/ejemplo1.txt
@@ -73,7 +82,7 @@ aleatorio: $(AVENTURA) $(GENERADOR)
 	@echo "Mapa aleatorio generado: $(DATA_SVG)/mapa_aleatorio.svg"
 
 clean:
-	rm -f $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO)
+	rm -f $(AVENTURA) $(GENERADOR) $(TIEMPOS) $(REPARTO) 
 	rm -f $(DATA_TXT)/*.txt $(DATA_IN)/aleatorio.txt $(DATA_SVG)/*.svg
 
-.PHONY: all run svg ruta ejemplos aleatorio clean
+.PHONY: all run svg ruta ejemplos aleatorio clean reparto
